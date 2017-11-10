@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Combination 4: Python publisher to C++ subscriber -->
+<launch>
+	<!-- Run publisher -->
+	<node pkg="performance_tests" type="pyPublisher.py" name="pyPublisher">
+		<param name="publish_frequency" type="int" value="10"/>
+	</node>
+
+	<!-- Run subscriber -->
+	<node pkg="performance_tests" type="cppSubscriber" name="cppSubscriber"/>
+</launch>

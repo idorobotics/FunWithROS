@@ -1,0 +1,8 @@
+prefix=/home/bonolo/Documents/CV/Robotics/BlueOceanRobotics/Assignment/FunWithROS/funwithros/devel
+
+Name: performance_tests
+Description: Description of performance_tests
+Version: 0.0.0
+Cflags: -I/home/bonolo/Documents/CV/Robotics/BlueOceanRobotics/Assignment/FunWithROS/funwithros/devel/include
+Libs: -L/home/bonolo/Documents/CV/Robotics/BlueOceanRobotics/Assignment/FunWithROS/funwithros/devel/lib 
+Requires: message_runtime
