@@ -3,7 +3,7 @@
 <launch>
 	<!-- Run publisher -->
 	<node pkg="performance_tests" type="pyPublisher.py" name="pyPublisher">
-		<param name="publish_frequency" type="int" value="10"/>
+		<param name="publish_frequency" type="double" value="900.0"/>
 	</node>
 
 	<!-- Run subscriber -->

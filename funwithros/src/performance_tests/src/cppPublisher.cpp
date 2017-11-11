@@ -9,8 +9,14 @@ int main(int argc, char **argv)
   ros::NodeHandle n;
 
   ros::Publisher cpp_pub = n.advertise<performance_tests::SuperAwesome>("/awesome_topic", 1000); //size of message queue
+  double rate;
+  if (!(ros::param::get("/cppPublisher/publish_frequency",rate)))
+  {
+	ROS_ERROR("Failed to get param 'publish_frequency'");
+  }
+  ros::Rate loop_rate(rate);
+  std::cout << rate << std::endl;
 
-  ros::Rate loop_rate(10);
 
   while (ros::ok())
   {
